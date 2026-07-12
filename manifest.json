@@ -1,0 +1,30 @@
+{
+  "id": "audit-workpaper-automation",
+  "title": "Audit Workpaper Automation App",
+  "industry": "Financial Services",
+  "industryId": "financial-services",
+  "specialization": "Audit Workpaper Automation",
+  "sourcePlatformGroup": "accounting-tax-audit-platform",
+  "sources": [
+    "AIAPARAutomation",
+    "AIAccessibilityAuditAgent",
+    "AIAuditWorkpaperAutomation",
+    "AISOXAuditAutomation"
+  ],
+  "featureCount": 270,
+  "candidateFeatureCount": 356,
+  "eliminatedSimilarFeatures": 86,
+  "evidenceCount": 810,
+  "aiPageCount": 0,
+  "sourceAIPageCount": 0,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 0,
+    "seededTables": 0,
+    "seededRows": 0
+  },
+  "visibleFeatureCount": 193,
+  "featureVisibilityMode": "source-backed-fallback"
+}
