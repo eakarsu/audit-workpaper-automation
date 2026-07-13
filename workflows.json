@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "appId": "audit-workpaper-automation",
+  "workflows": [
+    {
+      "id": "control-library",
+      "title": "Control Library Management",
+      "description": "Create a reusable control template and map it to framework requirements before publication.",
+      "fields": [
+        {"key": "controlCode", "label": "Control Code", "type": "text", "required": true},
+        {"key": "controlTitle", "label": "Control Title", "type": "text", "required": true},
+        {"key": "framework", "label": "Framework", "type": "select", "required": true, "options": ["SOX", "HIPAA", "GDPR", "Export control"]},
+        {"key": "frequency", "label": "Test Frequency", "type": "select", "required": true, "options": ["Monthly", "Quarterly", "Annual", "Event-driven"]},
+        {"key": "ownerRole", "label": "Owner Role", "type": "text", "required": true}
+      ],
+      "states": ["draft", "review", "published", "retired"],
+      "transitions": [
+        {"id": "review", "label": "Submit for Review", "from": ["draft"], "to": "review"},
+        {"id": "publish", "label": "Publish Control", "from": ["review"], "to": "published"},
+        {"id": "revise", "label": "Return to Draft", "from": ["review"], "to": "draft"},
+        {"id": "retire", "label": "Retire Control", "from": ["published"], "to": "retired"}
+      ],
+      "seeds": [{"id": "control-1001", "state": "draft", "controlCode": "SOX-ITGC-01", "controlTitle": "Quarterly privileged-access review", "framework": "SOX", "frequency": "Quarterly", "ownerRole": "IT Control Owner"}]
+    },
+    {
+      "id": "evidence-requests",
+      "title": "Evidence Request",
+      "description": "Assign evidence collection, enforce due dates, record attachments, and obtain reviewer approval.",
+      "fields": [
+        {"key": "requestCode", "label": "Request Code", "type": "text", "required": true},
+        {"key": "controlCode", "label": "Control Code", "type": "text", "required": true},
+        {"key": "assignee", "label": "Assignee", "type": "text", "required": true},
+        {"key": "dueDate", "label": "Due Date", "type": "date", "required": true},
+        {"key": "evidenceDescription", "label": "Evidence Requested", "type": "textarea", "required": true}
+      ],
+      "states": ["draft", "requested", "submitted", "approved", "rejected", "overdue"],
+      "transitions": [
+        {"id": "send", "label": "Send Request", "from": ["draft"], "to": "requested"},
+        {"id": "submit", "label": "Submit Evidence", "from": ["requested", "overdue", "rejected"], "to": "submitted"},
+        {"id": "approve", "label": "Approve Evidence", "from": ["submitted"], "to": "approved"},
+        {"id": "reject", "label": "Reject Evidence", "from": ["submitted"], "to": "rejected"},
+        {"id": "overdue", "label": "Mark Overdue", "from": ["requested"], "to": "overdue"}
+      ],
+      "seeds": [{"id": "evidence-1001", "state": "requested", "requestCode": "PBC-2026-Q2-014", "controlCode": "SOX-ITGC-01", "assignee": "Avery Patel", "dueDate": "2026-07-20", "evidenceDescription": "Privileged-user listing and documented quarterly owner review."}]
+    },
+    {
+      "id": "policy-mapping",
+      "title": "Policy-to-Control Mapping",
+      "description": "Map a versioned policy to controls, risks, systems, owners, and regulatory requirements.",
+      "fields": [
+        {"key": "policyCode", "label": "Policy Code", "type": "text", "required": true},
+        {"key": "policyVersion", "label": "Policy Version", "type": "text", "required": true},
+        {"key": "controlCodes", "label": "Mapped Controls", "type": "textarea", "required": true},
+        {"key": "requirement", "label": "Regulatory Requirement", "type": "text", "required": true},
+        {"key": "mappingOwner", "label": "Mapping Owner", "type": "text", "required": true}
+      ],
+      "states": ["draft", "validation", "approved", "superseded"],
+      "transitions": [
+        {"id": "validate", "label": "Submit for Validation", "from": ["draft"], "to": "validation"},
+        {"id": "approve", "label": "Approve Mapping", "from": ["validation"], "to": "approved"},
+        {"id": "revise", "label": "Return to Draft", "from": ["validation"], "to": "draft"},
+        {"id": "supersede", "label": "Supersede Version", "from": ["approved"], "to": "superseded"}
+      ],
+      "seeds": [{"id": "mapping-1001", "state": "draft", "policyCode": "POL-ACCESS-01", "policyVersion": "3.2", "controlCodes": "SOX-ITGC-01, SOX-ITGC-04", "requirement": "SOX access-control evidence", "mappingOwner": "Riley Morgan"}]
+    },
+    {
+      "id": "audit-workflow",
+      "title": "Workpaper Preparation and Review",
+      "description": "Route a workpaper through preparer completion, reviewer challenge, signoff, and escalation.",
+      "fields": [
+        {"key": "workpaperCode", "label": "Workpaper Code", "type": "text", "required": true},
+        {"key": "preparer", "label": "Preparer", "type": "text", "required": true},
+        {"key": "reviewer", "label": "Reviewer", "type": "text", "required": true},
+        {"key": "testingPeriod", "label": "Testing Period", "type": "text", "required": true},
+        {"key": "conclusion", "label": "Preparer Conclusion", "type": "textarea", "required": true}
+      ],
+      "states": ["preparation", "review", "rejected", "signed-off", "escalated"],
+      "transitions": [
+        {"id": "submit", "label": "Submit for Review", "from": ["preparation", "rejected"], "to": "review"},
+        {"id": "reject", "label": "Reject with Comments", "from": ["review"], "to": "rejected"},
+        {"id": "signoff", "label": "Sign Off", "from": ["review"], "to": "signed-off"},
+        {"id": "escalate", "label": "Escalate", "from": ["review", "rejected"], "to": "escalated"}
+      ],
+      "seeds": [{"id": "workpaper-1001", "state": "preparation", "workpaperCode": "WP-ITGC-Q2-07", "preparer": "Sam Ortega", "reviewer": "Casey Wright", "testingPeriod": "2026 Q2", "conclusion": "Sample testing is in progress; two evidence items remain outstanding."}]
+    },
+    {
+      "id": "risk-dashboard",
+      "title": "Compliance Readiness Assessment",
+      "description": "Calculate a reviewable snapshot of failed controls, overdue evidence, deficiencies, and readiness risk.",
+      "fields": [
+        {"key": "assessmentPeriod", "label": "Assessment Period", "type": "text", "required": true},
+        {"key": "framework", "label": "Framework", "type": "select", "required": true, "options": ["SOX", "HIPAA", "GDPR", "Export control"]},
+        {"key": "scope", "label": "Scope", "type": "textarea", "required": true},
+        {"key": "riskThreshold", "label": "High-Risk Threshold", "type": "number", "required": true},
+        {"key": "owner", "label": "Assessment Owner", "type": "text", "required": true}
+      ],
+      "states": ["configured", "calculating", "review", "published"],
+      "transitions": [
+        {"id": "calculate", "label": "Calculate Metrics", "from": ["configured"], "to": "calculating"},
+        {"id": "review", "label": "Review Results", "from": ["calculating"], "to": "review"},
+        {"id": "recalculate", "label": "Recalculate", "from": ["review"], "to": "calculating"},
+        {"id": "publish", "label": "Publish Snapshot", "from": ["review"], "to": "published"}
+      ],
+      "seeds": [{"id": "readiness-1001", "state": "configured", "assessmentPeriod": "2026 Q2", "framework": "SOX", "scope": "Entity-level and IT general controls", "riskThreshold": 70, "owner": "Jamie Kim"}]
+    },
+    {
+      "id": "remediation-tracker",
+      "title": "Finding Remediation",
+      "description": "Assign a finding, collect proof, retest the correction, and obtain closure approval.",
+      "fields": [
+        {"key": "findingCode", "label": "Finding Code", "type": "text", "required": true},
+        {"key": "findingSummary", "label": "Finding Summary", "type": "textarea", "required": true},
+        {"key": "owner", "label": "Remediation Owner", "type": "text", "required": true},
+        {"key": "dueDate", "label": "Due Date", "type": "date", "required": true},
+        {"key": "severity", "label": "Severity", "type": "select", "required": true, "options": ["Low", "Moderate", "High", "Critical"]}
+      ],
+      "states": ["open", "in-progress", "proof-submitted", "retest", "closed", "reopened"],
+      "transitions": [
+        {"id": "start", "label": "Start Remediation", "from": ["open", "reopened"], "to": "in-progress"},
+        {"id": "proof", "label": "Submit Proof", "from": ["in-progress"], "to": "proof-submitted"},
+        {"id": "retest", "label": "Begin Retest", "from": ["proof-submitted"], "to": "retest"},
+        {"id": "close", "label": "Approve Closure", "from": ["retest"], "to": "closed"},
+        {"id": "reopen", "label": "Reopen Finding", "from": ["retest", "closed"], "to": "reopened"}
+      ],
+      "seeds": [{"id": "remediation-1001", "state": "open", "findingCode": "DEF-2026-018", "findingSummary": "Terminated privileged accounts were not removed within the policy window.", "owner": "Drew Nguyen", "dueDate": "2026-08-01", "severity": "High"}]
+    },
+    {
+      "id": "audit-trail",
+      "title": "Immutable Audit Event Review",
+      "description": "Record and verify locally chained events for uploads, edits, approvals, rejections, exports, and AI recommendations.",
+      "fields": [
+        {"key": "eventType", "label": "Event Type", "type": "select", "required": true, "options": ["Upload", "Edit", "Approval", "Rejection", "Export", "AI recommendation"]},
+        {"key": "actor", "label": "Actor", "type": "text", "required": true},
+        {"key": "objectRef", "label": "Object Reference", "type": "text", "required": true},
+        {"key": "eventSummary", "label": "Event Summary", "type": "textarea", "required": true},
+        {"key": "hashStatus", "label": "Hash Status", "type": "select", "required": true, "options": ["Pending", "Verified", "Mismatch"]}
+      ],
+      "states": ["recorded", "hashing", "verified", "exception"],
+      "transitions": [
+        {"id": "hash", "label": "Create Event Hash", "from": ["recorded"], "to": "hashing"},
+        {"id": "verify", "label": "Verify Chain", "from": ["hashing", "exception"], "to": "verified"},
+        {"id": "exception", "label": "Flag Integrity Exception", "from": ["hashing", "verified"], "to": "exception"}
+      ],
+      "seeds": [{"id": "audit-event-1001", "state": "recorded", "eventType": "Approval", "actor": "Casey Wright", "objectRef": "WP-ITGC-Q2-03", "eventSummary": "Reviewer approved the completed access-control workpaper.", "hashStatus": "Pending"}]
+    },
+    {
+      "id": "report-export",
+      "title": "Audit Report Export",
+      "description": "Generate a control, evidence, exception, remediation, or executive package for local delivery.",
+      "fields": [
+        {"key": "reportType", "label": "Report Type", "type": "select", "required": true, "options": ["Control matrix", "Evidence package", "Exception report", "Remediation report", "Executive report"]},
+        {"key": "period", "label": "Reporting Period", "type": "text", "required": true},
+        {"key": "format", "label": "Export Format", "type": "select", "required": true, "options": ["PDF", "Excel", "CSV"]},
+        {"key": "requestedBy", "label": "Requested By", "type": "text", "required": true},
+        {"key": "deliveryMethod", "label": "Delivery Method", "type": "select", "required": true, "options": ["Local download", "Manual transfer", "Configured integration"]}
+      ],
+      "states": ["queued", "generating", "quality-review", "ready", "delivered", "failed"],
+      "transitions": [
+        {"id": "generate", "label": "Generate Export", "from": ["queued", "failed"], "to": "generating"},
+        {"id": "review", "label": "Send to Quality Review", "from": ["generating"], "to": "quality-review"},
+        {"id": "ready", "label": "Approve Export", "from": ["quality-review"], "to": "ready"},
+        {"id": "deliver", "label": "Record Delivery", "from": ["ready"], "to": "delivered"},
+        {"id": "fail", "label": "Record Failure", "from": ["generating"], "to": "failed"}
+      ],
+      "seeds": [{"id": "report-job-1001", "state": "queued", "reportType": "Executive report", "period": "2026 Q2", "format": "PDF", "requestedBy": "Alex Rivera", "deliveryMethod": "Local download"}]
+    }
+  ],
+  "resources": [
+    {"name": "control_templates", "type": "table", "workflowId": "control-library"},
+    {"name": "control_mappings", "type": "table", "workflowId": "control-library"},
+    {"name": "framework_requirements", "type": "table", "workflowId": "control-library"},
+    {"name": "evidence_requests", "type": "table", "workflowId": "evidence-requests"},
+    {"name": "evidence_request_files", "type": "table", "workflowId": "evidence-requests"},
+    {"name": "evidence_request_events", "type": "table", "workflowId": "evidence-requests"},
+    {"name": "policy_control_mappings", "type": "table", "workflowId": "policy-mapping"},
+    {"name": "policy_versions", "type": "table", "workflowId": "policy-mapping"},
+    {"name": "regulatory_requirements", "type": "table", "workflowId": "policy-mapping"},
+    {"name": "audit_workflows", "type": "table", "workflowId": "audit-workflow"},
+    {"name": "audit_workflow_steps", "type": "table", "workflowId": "audit-workflow"},
+    {"name": "audit_signoffs", "type": "table", "workflowId": "audit-workflow"},
+    {"name": "compliance_readiness_metrics", "type": "view", "workflowId": "risk-dashboard"},
+    {"name": "control_risk_metrics", "type": "view", "workflowId": "risk-dashboard"},
+    {"name": "remediation_findings", "type": "table", "workflowId": "remediation-tracker"},
+    {"name": "remediation_tasks", "type": "table", "workflowId": "remediation-tracker"},
+    {"name": "remediation_evidence", "type": "table", "workflowId": "remediation-tracker"},
+    {"name": "immutable_audit_events", "type": "table", "workflowId": "audit-trail"},
+    {"name": "audit_event_hashes", "type": "table", "workflowId": "audit-trail"},
+    {"name": "report_jobs", "type": "table", "workflowId": "report-export"},
+    {"name": "report_exports", "type": "table", "workflowId": "report-export"}
+  ]
+}
