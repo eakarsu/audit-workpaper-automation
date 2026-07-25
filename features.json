@@ -1,103 +1,5 @@
 [
   {
-    "name": "AI Fix Suggestions",
-    "canonicalKey": "ai fix suggestion",
-    "aliases": [],
-    "kinds": [
-      "navigation"
-    ],
-    "routes": [],
-    "sourceProjects": [
-      "AIAccessibilityAuditAgent"
-    ],
-    "consolidatedFromApps": [
-      "financial-services/audit-workpaper-automation"
-    ],
-    "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIAccessibilityAuditAgent",
-        "path": "frontend/src/components/Sidebar.js:54",
-        "route": "",
-        "originApp": "financial-services/audit-workpaper-automation"
-      }
-    ]
-  },
-  {
-    "name": "AI History",
-    "canonicalKey": "ai history",
-    "aliases": [
-      "AI History Page"
-    ],
-    "kinds": [
-      "navigation",
-      "page"
-    ],
-    "routes": [
-      "/AIHistory",
-      "/AIHistoryPage",
-      "/ai-history"
-    ],
-    "sourceProjects": [
-      "AIAPARAutomation",
-      "AIAuditWorkpaperAutomation"
-    ],
-    "consolidatedFromApps": [
-      "financial-services/audit-workpaper-automation"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIAPARAutomation",
-        "path": "frontend/src/App.jsx:94",
-        "route": "/ai-history",
-        "originApp": "financial-services/audit-workpaper-automation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAPARAutomation",
-        "path": "frontend/src/pages/AIHistory.jsx",
-        "route": "/AIHistory",
-        "originApp": "financial-services/audit-workpaper-automation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAPARAutomation",
-        "path": "frontend/src/pages/Dashboard.jsx:137",
-        "route": "/ai-history",
-        "originApp": "financial-services/audit-workpaper-automation"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:22",
-        "route": "",
-        "originApp": "financial-services/audit-workpaper-automation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:78",
-        "route": "/ai-history",
-        "originApp": "financial-services/audit-workpaper-automation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:22",
-        "route": "/ai-history",
-        "originApp": "financial-services/audit-workpaper-automation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/AIHistoryPage.js",
-        "route": "/AIHistoryPage",
-        "originApp": "financial-services/audit-workpaper-automation"
-      }
-    ]
-  },
-  {
     "name": "Access Reviews",
     "canonicalKey": "access review",
     "aliases": [],
@@ -291,8 +193,7 @@
       "AICreditRiskAssessmentAgent",
       "AICryptocurrencyTaxCalculator",
       "AIInsuranceClaimsAdjuster",
-      "aiFinancePlatform",
-      "financialServices"
+      "aiFinancePlatform"
     ],
     "consolidatedFromApps": [
       "financial-services/aml-transaction-monitoring",
@@ -333,28 +234,28 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:19",
+        "path": "client/src/components/Sidebar.jsx:19",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:83",
+        "path": "client/src/App.jsx:83",
         "route": "/advanced-ai-tools",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:19",
+        "path": "client/src/components/Sidebar.jsx:19",
         "route": "/advanced-ai-tools",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/AdvancedAIToolsPage.js",
+        "path": "client/src/pages/AdvancedAIToolsPage.jsx",
         "route": "/AdvancedAIToolsPage",
         "originApp": "financial-services/audit-workpaper-automation"
       },
@@ -376,13 +277,6 @@
         "kind": "navigation",
         "sourceProject": "aiFinancePlatform",
         "path": "frontend/src/components/Sidebar.js:82",
-        "route": "",
-        "originApp": "financial-services/aml-transaction-monitoring"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "financialServices",
-        "path": "src/components/layout/Sidebar.tsx:34",
         "route": "",
         "originApp": "financial-services/aml-transaction-monitoring"
       },
@@ -506,6 +400,104 @@
         "sourceProject": "AIAPARAutomation",
         "path": "backend/routes/customViews.js:86",
         "route": "/aging-report",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "AI Fix Suggestions",
+    "canonicalKey": "ai fix suggestion",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIAccessibilityAuditAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAccessibilityAuditAgent",
+        "path": "frontend/src/components/Sidebar.js:54",
+        "route": "",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "AI History",
+    "canonicalKey": "ai history",
+    "aliases": [
+      "AI History Page"
+    ],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/AIHistory",
+      "/AIHistoryPage",
+      "/ai-history"
+    ],
+    "sourceProjects": [
+      "AIAPARAutomation",
+      "AIAuditWorkpaperAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/App.jsx:94",
+        "route": "/ai-history",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/AIHistory.jsx",
+        "route": "/AIHistory",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/Dashboard.jsx:137",
+        "route": "/ai-history",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/components/Sidebar.jsx:22",
+        "route": "",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/App.jsx:78",
+        "route": "/ai-history",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/components/Sidebar.jsx:22",
+        "route": "/ai-history",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/pages/AIHistoryPage.jsx",
+        "route": "/AIHistoryPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
     ]
@@ -1124,7 +1116,7 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:10",
+        "path": "client/src/components/Sidebar.jsx:10",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -1148,7 +1140,7 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:13",
+        "path": "client/src/components/Sidebar.jsx:13",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -1282,21 +1274,21 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:23",
+        "path": "client/src/components/Sidebar.jsx:23",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:75",
+        "path": "client/src/App.jsx:75",
         "route": "/audit-trail",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:23",
+        "path": "client/src/components/Sidebar.jsx:23",
         "route": "/audit-trail",
         "originApp": "financial-services/audit-workpaper-automation"
       },
@@ -1310,7 +1302,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/AuditTrailPage.js",
+        "path": "client/src/pages/AuditTrailPage.jsx",
         "route": "/AuditTrailPage",
         "originApp": "financial-services/audit-workpaper-automation"
       },
@@ -1728,7 +1720,7 @@
   },
   {
     "name": "Cf Continuous Controls Monitoring With Real Time Exception",
-    "canonicalKey": "cf continuous controls exception monitoring real time with",
+    "canonicalKey": "cf continuous control exception monitoring real time with",
     "aliases": [],
     "kinds": [
       "page"
@@ -1754,7 +1746,7 @@
   },
   {
     "name": "Cf Continuous Controls Monitoring With Real Time Exception Alerts",
-    "canonicalKey": "alert cf continuous controls exception monitoring real time with",
+    "canonicalKey": "alert cf continuous control exception monitoring real time with",
     "aliases": [],
     "kinds": [
       "page"
@@ -1910,7 +1902,7 @@
   },
   {
     "name": "Cf Regulatory Change Digest Ingesting Sec Pcaob Updates Flagging",
-    "canonicalKey": "cf change digest flagging ingesting pcaob regulatory sec updates",
+    "canonicalKey": "cf change digest flagging ingesting pcaob regulatory sec update",
     "aliases": [],
     "kinds": [
       "page"
@@ -2116,22 +2108,29 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:74",
+        "path": "client/src/App.jsx:74",
         "route": "/checklists",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:14",
+        "path": "client/src/components/Sidebar.jsx:14",
         "route": "/checklists",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/Dashboard.js:67",
+        "path": "client/src/pages/Dashboard.jsx:67",
         "route": "/checklists",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/pages/ChecklistsPage.jsx",
+        "route": "/ChecklistsPage",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
@@ -2140,13 +2139,6 @@
         "path": "server/routes/dashboard.js:120",
         "route": "/checklist",
         "originApp": "financial-services/invoice-processing"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/ChecklistsPage.js",
-        "route": "/ChecklistsPage",
-        "originApp": "financial-services/audit-workpaper-automation"
       }
     ]
   },
@@ -2259,7 +2251,7 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:14",
+        "path": "client/src/components/Sidebar.jsx:14",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -2345,6 +2337,65 @@
         "path": "server/routes/extensions.js:260",
         "route": "/confirmations",
         "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "Connector Failures",
+    "canonicalKey": "connector failure",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cases/:id/connector-failures",
+      "/connector-failures"
+    ],
+    "sourceProjects": [
+      "AIExpenseReportAuditor",
+      "AISOXAuditAutomation",
+      "AiFinancialReportGenerator"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/aml-transaction-monitoring",
+      "financial-services/audit-workpaper-automation",
+      "financial-services/invoice-processing"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AISOXAuditAutomation",
+        "path": "server/governance/routerFactory.js:304",
+        "route": "/connector-failures",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISOXAuditAutomation",
+        "path": "server/governance/routerFactory.js:321",
+        "route": "/connector-failures",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "server/governance/routerFactory.js:170",
+        "route": "/connector-failures",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiFinancialReportGenerator",
+        "path": "backend/governance/routerFactory.js:523",
+        "route": "/connector-failures",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiFinancialReportGenerator",
+        "path": "backend/governance/routerFactory.js:542",
+        "route": "/cases/:id/connector-failures",
+        "originApp": "financial-services/aml-transaction-monitoring"
       }
     ]
   },
@@ -2485,7 +2536,7 @@
   },
   {
     "name": "Controls Monitor",
-    "canonicalKey": "controls monitor",
+    "canonicalKey": "control monitor",
     "aliases": [],
     "kinds": [
       "api",
@@ -3050,6 +3101,32 @@
     ]
   },
   {
+    "name": "Entries",
+    "canonicalKey": "entry",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/gl/entries"
+    ],
+    "sourceProjects": [
+      "AIAuditWorkpaperAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "server/routes/extensions.js:147",
+        "route": "/gl/entries",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
     "name": "ERP Mapping Suggest",
     "canonicalKey": "erp mapping suggest",
     "aliases": [],
@@ -3099,32 +3176,6 @@
     ]
   },
   {
-    "name": "Entries",
-    "canonicalKey": "entry",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/gl/entries"
-    ],
-    "sourceProjects": [
-      "AIAuditWorkpaperAutomation"
-    ],
-    "consolidatedFromApps": [
-      "financial-services/audit-workpaper-automation"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "server/routes/extensions.js:147",
-        "route": "/gl/entries",
-        "originApp": "financial-services/audit-workpaper-automation"
-      }
-    ]
-  },
-  {
     "name": "Events",
     "canonicalKey": "event",
     "aliases": [],
@@ -3132,16 +3183,21 @@
       "api"
     ],
     "routes": [
+      "/:id/events",
       "/_/events",
       "/continuous/events"
     ],
     "sourceProjects": [
       "AIAuditWorkpaperAutomation",
-      "AICarbonCreditMarketplaceVerifier"
+      "AICarbonCreditMarketplaceVerifier",
+      "AIWealthManagementRoboAdvisor",
+      "AiTaxPrep"
     ],
     "consolidatedFromApps": [
       "financial-services/audit-workpaper-automation",
-      "financial-services/carbon-credit-marketplace-verifier"
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/invoice-processing",
+      "financial-services/trading-merged"
     ],
     "evidence": [
       {
@@ -3157,6 +3213,20 @@
         "path": "server/routes/extensions.js:302",
         "route": "/continuous/events",
         "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiTaxPrep",
+        "path": "server/governance/router.js:98",
+        "route": "/:id/events",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWealthManagementRoboAdvisor",
+        "path": "server/governance/router.js:98",
+        "route": "/:id/events",
+        "originApp": "financial-services/trading-merged"
       },
       {
         "kind": "api",
@@ -3181,37 +3251,64 @@
       "/:id/evidence",
       "/EvidencePage",
       "/cases/:id/evidence",
-      "/evidence"
+      "/evidence",
+      "/projects/:id/evidence"
     ],
     "sourceProjects": [
       "AIAuditWorkpaperAutomation",
+      "AIClimateFinanceCarbonRegistry",
+      "AIDebtCollectionOptimizer",
+      "AIExpenseReportAuditor",
+      "AIFamilyOfficeManager",
+      "AIInsuranceClaimsAdjuster",
       "AISOXAuditAutomation",
-      "AISmallClaimsCourtGuide"
+      "AISmallClaimsCourtGuide",
+      "AiFinancialReportGenerator"
     ],
     "consolidatedFromApps": [
+      "financial-services/aml-transaction-monitoring",
       "financial-services/audit-workpaper-automation",
-      "financial-services/grounded-claims"
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/grounded-claims",
+      "financial-services/insurance-claims-adjuster",
+      "financial-services/invoice-processing",
+      "financial-services/smart-contract-auditor",
+      "financial-services/trading-merged"
     ],
     "evidence": [
       {
+        "kind": "api",
+        "sourceProject": "AIClimateFinanceCarbonRegistry",
+        "path": "backend/routes/governedRegistry.js:234",
+        "route": "/projects/:id/evidence",
+        "originApp": "financial-services/smart-contract-auditor"
+      },
+      {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:70",
+        "path": "client/src/App.jsx:70",
         "route": "/evidence",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:10",
+        "path": "client/src/components/Sidebar.jsx:10",
         "route": "/evidence",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/Dashboard.js:63",
+        "path": "client/src/pages/Dashboard.jsx:63",
         "route": "/evidence",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISOXAuditAutomation",
+        "path": "server/governance/routerFactory.js:153",
+        "route": "/cases/:id/evidence",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
@@ -3231,9 +3328,23 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/EvidencePage.js",
+        "path": "client/src/pages/EvidencePage.jsx",
         "route": "/EvidencePage",
         "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "server/governance/routerFactory.js:95",
+        "route": "/cases/:id/evidence",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIFamilyOfficeManager",
+        "path": "backend/routes/governedDecisions.js:50",
+        "route": "/:id/evidence",
+        "originApp": "financial-services/trading-merged"
       },
       {
         "kind": "api",
@@ -3255,6 +3366,27 @@
         "path": "frontend/src/App.jsx:73",
         "route": "/cases/:id/evidence",
         "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/governedClaims.js:5",
+        "route": "/:id/evidence",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiFinancialReportGenerator",
+        "path": "backend/governance/routerFactory.js:171",
+        "route": "/cases/:id/evidence",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIDebtCollectionOptimizer",
+        "path": "server/routes/governedWorkflow.js:87",
+        "route": "/cases/:id/evidence",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
       }
     ]
   },
@@ -3282,28 +3414,28 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:15",
+        "path": "client/src/components/Sidebar.jsx:15",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:79",
+        "path": "client/src/App.jsx:79",
         "route": "/evidence-adequacy",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:15",
+        "path": "client/src/components/Sidebar.jsx:15",
         "route": "/evidence-adequacy",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/EvidenceAdequacyPage.js",
+        "path": "client/src/pages/EvidenceAdequacyPage.jsx",
         "route": "/EvidenceAdequacyPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -3602,21 +3734,21 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:84",
+        "path": "client/src/App.jsx:84",
         "route": "/extensions",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:20",
+        "path": "client/src/components/Sidebar.jsx:20",
         "route": "/extensions",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/ExtensionsPage.js",
+        "path": "client/src/pages/ExtensionsPage.jsx",
         "route": "/ExtensionsPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -3624,7 +3756,7 @@
   },
   {
     "name": "Extensions Gl Risk ERP",
-    "canonicalKey": "erp extensions gl risk",
+    "canonicalKey": "erp extension gl risk",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -3640,8 +3772,34 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:20",
+        "path": "client/src/components/Sidebar.jsx:20",
         "route": "",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "External Capabilities",
+    "canonicalKey": "capability external",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/external-capabilities"
+    ],
+    "sourceProjects": [
+      "AIAuditWorkpaperAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "server/routes/governedWorkpapers.js:49",
+        "route": "/external-capabilities",
         "originApp": "financial-services/audit-workpaper-automation"
       }
     ]
@@ -3742,44 +3900,55 @@
       "Findings Page"
     ],
     "kinds": [
+      "api",
       "page"
     ],
     "routes": [
       "/FindingsPage",
+      "/cases/:id/findings",
       "/findings"
     ],
     "sourceProjects": [
-      "AIAuditWorkpaperAutomation"
+      "AIAuditWorkpaperAutomation",
+      "AISmartContractAuditor"
     ],
     "consolidatedFromApps": [
-      "financial-services/audit-workpaper-automation"
+      "financial-services/audit-workpaper-automation",
+      "financial-services/smart-contract-auditor"
     ],
     "evidence": [
       {
+        "kind": "api",
+        "sourceProject": "AISmartContractAuditor",
+        "path": "backend/src/routes/contractWorkflow.ts:26",
+        "route": "/cases/:id/findings",
+        "originApp": "financial-services/smart-contract-auditor"
+      },
+      {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:73",
+        "path": "client/src/App.jsx:73",
         "route": "/findings",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:13",
+        "path": "client/src/components/Sidebar.jsx:13",
         "route": "/findings",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/Dashboard.js:66",
+        "path": "client/src/pages/Dashboard.jsx:66",
         "route": "/findings",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/FindingsPage.js",
+        "path": "client/src/pages/FindingsPage.jsx",
         "route": "/FindingsPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -3888,7 +4057,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapAiAccountAnalysisDetectingUnusual.js",
+        "path": "client/src/pages/GapAiAccountAnalysisDetectingUnusual.jsx",
         "route": "/GapAiAccountAnalysisDetectingUnusual",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -3940,7 +4109,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapAiAuditorCoachingPriorYear.js",
+        "path": "client/src/pages/GapAiAuditorCoachingPriorYear.jsx",
         "route": "/GapAiAuditorCoachingPriorYear",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -4122,7 +4291,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapAiSamplingStrategyRecommendation.js",
+        "path": "client/src/pages/GapAiSamplingStrategyRecommendation.jsx",
         "route": "/GapAiSamplingStrategyRecommendation",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -4234,7 +4403,7 @@
   },
   {
     "name": "Gap Bridges Axe Wave Siteimprove Plus",
-    "canonicalKey": "axe bridges gap plus siteimprove wave",
+    "canonicalKey": "axe bridge gap plus siteimprove wave",
     "aliases": [],
     "kinds": [
       "page"
@@ -4304,7 +4473,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapClientPortalEvidenceRequests.js",
+        "path": "client/src/pages/GapClientPortalEvidenceRequests.jsx",
         "route": "/GapClientPortalEvidenceRequests",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -4382,7 +4551,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapContinuousAuditMonitoringRealTime.js",
+        "path": "client/src/pages/GapContinuousAuditMonitoringRealTime.jsx",
         "route": "/GapContinuousAuditMonitoringRealTime",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -4408,8 +4577,45 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapContinuousAuditingRealTimeMonitoring.js",
+        "path": "client/src/pages/GapContinuousAuditingRealTimeMonitoring.jsx",
         "route": "/GapContinuousAuditingRealTimeMonitoring",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "Gap ERP Connectors Sap Oracle Netsuite",
+    "canonicalKey": "connector erp gap netsuite oracle sap",
+    "aliases": [
+      "Gap Sap Oracle Netsuite ERP Connectors"
+    ],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapErpConnectorsSapOracleNetsuite",
+      "/GapSapOracleNetsuiteErpConnectors"
+    ],
+    "sourceProjects": [
+      "AIAPARAutomation",
+      "AIAuditWorkpaperAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/GapErpConnectorsSapOracleNetsuite.jsx",
+        "route": "/GapErpConnectorsSapOracleNetsuite",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/pages/GapSapOracleNetsuiteErpConnectors.jsx",
+        "route": "/GapSapOracleNetsuiteErpConnectors",
         "originApp": "financial-services/audit-workpaper-automation"
       }
     ]
@@ -4434,7 +4640,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapExternalConfirmationWorkflowThirdParty.js",
+        "path": "client/src/pages/GapExternalConfirmationWorkflowThirdParty.jsx",
         "route": "/GapExternalConfirmationWorkflowThirdParty",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -4442,7 +4648,7 @@
   },
   {
     "name": "Gap Figma Plugin Converting Designs Into",
-    "canonicalKey": "converting designs figma gap into plugin",
+    "canonicalKey": "converting design figma gap into plugin",
     "aliases": [],
     "kinds": [
       "page"
@@ -4512,7 +4718,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapGlAnalysisAutomationFlaggingUnusual.js",
+        "path": "client/src/pages/GapGlAnalysisAutomationFlaggingUnusual.jsx",
         "route": "/GapGlAnalysisAutomationFlaggingUnusual",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -4590,7 +4796,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapLimitedAiAuditRiskAssessment.js",
+        "path": "client/src/pages/GapLimitedAiAuditRiskAssessment.jsx",
         "route": "/GapLimitedAiAuditRiskAssessment",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -4642,7 +4848,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapLiveErpAccountingSystemIntegration.js",
+        "path": "client/src/pages/GapLiveErpAccountingSystemIntegration.jsx",
         "route": "/GapLiveErpAccountingSystemIntegration",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -4650,7 +4856,7 @@
   },
   {
     "name": "Gap Live ERP Connectors Sap Oracle",
-    "canonicalKey": "connectors erp gap live oracle sap",
+    "canonicalKey": "connector erp gap live oracle sap",
     "aliases": [],
     "kinds": [
       "page"
@@ -4720,7 +4926,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapMultiFirmCollaborationVersionedShared.js",
+        "path": "client/src/pages/GapMultiFirmCollaborationVersionedShared.jsx",
         "route": "/GapMultiFirmCollaborationVersionedShared",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -4806,7 +5012,7 @@
   },
   {
     "name": "Gap No Dashboards For Executive Reporting Beyond Pdf",
-    "canonicalKey": "beyond dashboards executive for gap no pdf reporting",
+    "canonicalKey": "beyond dashboard executive for gap no pdf reporting",
     "aliases": [],
     "kinds": [
       "page"
@@ -4832,7 +5038,7 @@
   },
   {
     "name": "Gap No Dashboards For Executive Reporting Beyond Pdf Export",
-    "canonicalKey": "beyond dashboards executive export for gap no pdf reporting",
+    "canonicalKey": "beyond dashboard executive export for gap no pdf reporting",
     "aliases": [],
     "kinds": [
       "page"
@@ -5118,7 +5324,7 @@
   },
   {
     "name": "Gap No Webhooks Notifications For Remediation Deadlines Or New",
-    "canonicalKey": "deadlines for gap no notifications or remediation webhooks",
+    "canonicalKey": "deadline for gap no notification or remediation webhook",
     "aliases": [
       "Gap No Webhooks Notifications For Remediation Deadlines Or"
     ],
@@ -5153,10 +5359,10 @@
     ]
   },
   {
-    "name": "Gap No Workflow Approvals Sign Offs For Findings",
+    "name": "Gap No Workflow Approvals Sign Offs For Findings No Approval",
     "canonicalKey": "approval finding for gap no offs sign workflow",
     "aliases": [
-      "Gap No Workflow Approvals Sign Offs For Findings No Approval"
+      "Gap No Workflow Approvals Sign Offs For Findings"
     ],
     "kinds": [
       "page"
@@ -5190,7 +5396,7 @@
   },
   {
     "name": "Gap Notifications Subsystem",
-    "canonicalKey": "gap notifications subsystem",
+    "canonicalKey": "gap notification subsystem",
     "aliases": [],
     "kinds": [
       "page"
@@ -5267,7 +5473,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapOutboundWebhooks.js",
+        "path": "client/src/pages/GapOutboundWebhooks.jsx",
         "route": "/GapOutboundWebhooks",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -5326,43 +5532,6 @@
     ]
   },
   {
-    "name": "Gap Sap Oracle Netsuite ERP Connectors",
-    "canonicalKey": "connector erp gap netsuite oracle sap",
-    "aliases": [
-      "Gap ERP Connectors Sap Oracle Netsuite"
-    ],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/GapErpConnectorsSapOracleNetsuite",
-      "/GapSapOracleNetsuiteErpConnectors"
-    ],
-    "sourceProjects": [
-      "AIAPARAutomation",
-      "AIAuditWorkpaperAutomation"
-    ],
-    "consolidatedFromApps": [
-      "financial-services/audit-workpaper-automation"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIAPARAutomation",
-        "path": "frontend/src/pages/GapErpConnectorsSapOracleNetsuite.jsx",
-        "route": "/GapErpConnectorsSapOracleNetsuite",
-        "originApp": "financial-services/audit-workpaper-automation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapSapOracleNetsuiteErpConnectors.js",
-        "route": "/GapSapOracleNetsuiteErpConnectors",
-        "originApp": "financial-services/audit-workpaper-automation"
-      }
-    ]
-  },
-  {
     "name": "Gap Xbrl10 K10 Q",
     "canonicalKey": "gap k10 q xbrl10",
     "aliases": [],
@@ -5382,7 +5551,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/GapXbrl10K10Q.js",
+        "path": "client/src/pages/GapXbrl10K10Q.jsx",
         "route": "/GapXbrl10K10Q",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -5652,8 +5821,7 @@
     "canonicalKey": "health",
     "aliases": [],
     "kinds": [
-      "api",
-      "page"
+      "api"
     ],
     "routes": [
       "/apathy-prediction/health",
@@ -5700,6 +5868,7 @@
       "AIMortgageUnderwritingAssistant",
       "AIPersonalFinanceMultiAgent",
       "AIRevenueRecognitionEngine",
+      "AISOXAuditAutomation",
       "AISmallClaimsCourtGuide",
       "AISmartContractAuditor",
       "AIVCDealFlowCopilot",
@@ -5821,7 +5990,7 @@
       {
         "kind": "api",
         "sourceProject": "AIDAOGovernanceAssistant",
-        "path": "backend/server.js:51",
+        "path": "backend/server.js:53",
         "route": "/api/health",
         "originApp": "financial-services/aave-protocol-v2-merged"
       },
@@ -5835,7 +6004,7 @@
       {
         "kind": "api",
         "sourceProject": "AICryptocurrencyTaxCalculator",
-        "path": "backend/src/index.js:93",
+        "path": "backend/src/index.js:99",
         "route": "/api/health",
         "originApp": "financial-services/smart-contract-auditor"
       },
@@ -5926,21 +6095,21 @@
       {
         "kind": "api",
         "sourceProject": "AISmartContractAuditor",
-        "path": "backend/src/index.ts:49",
+        "path": "backend/src/index.ts:34",
         "route": "/api/health",
         "originApp": "financial-services/smart-contract-auditor"
       },
       {
         "kind": "api",
         "sourceProject": "AISmartContractAuditor",
-        "path": "backend/src/routes/ai-continuous-monitor.ts:66",
+        "path": "backend/src/routes/ai-continuous-monitor.ts:72",
         "route": "/health",
         "originApp": "financial-services/smart-contract-auditor"
       },
       {
         "kind": "api",
         "sourceProject": "bitcoin",
-        "path": "trading-platform/backend/src/server.js:63",
+        "path": "trading-platform/backend/src/server.js:48",
         "route": "/health",
         "originApp": "financial-services/smart-contract-auditor"
       },
@@ -6045,7 +6214,7 @@
       {
         "kind": "api",
         "sourceProject": "AIAPARAutomation",
-        "path": "backend/server.js:81",
+        "path": "backend/server.js:90",
         "route": "/api/health",
         "originApp": "financial-services/audit-workpaper-automation"
       },
@@ -6164,14 +6333,14 @@
       {
         "kind": "api",
         "sourceProject": "AIAccessibilityAuditAgent",
-        "path": "backend/server.js:83",
+        "path": "backend/server.js:92",
         "route": "/api/health",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "api",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "server/index.js:60",
+        "path": "server/index.js:66",
         "route": "/api/health",
         "originApp": "financial-services/audit-workpaper-automation"
       },
@@ -6275,64 +6444,85 @@
       },
       {
         "kind": "api",
+        "sourceProject": "AISOXAuditAutomation",
+        "path": "server/index.js:30",
+        "route": "/api/health",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIExpenseReportAuditor",
-        "path": "server/index.js:38",
+        "path": "server/index.js:40",
         "route": "/api/health",
         "originApp": "financial-services/invoice-processing"
       },
       {
         "kind": "api",
         "sourceProject": "AIForensicAccountingInvestigator",
-        "path": "backend/src/server.js:110",
+        "path": "backend/src/server.js:111",
         "route": "/api/health",
         "originApp": "financial-services/invoice-processing"
       },
       {
         "kind": "api",
         "sourceProject": "AiTaxPrep",
-        "path": "server/index.js:75",
+        "path": "server/index.js:60",
+        "route": "/api/health",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiTaxPrep",
+        "path": "server/index.js:91",
         "route": "/api/health",
         "originApp": "financial-services/invoice-processing"
       },
       {
         "kind": "api",
         "sourceProject": "AIRevenueRecognitionEngine",
-        "path": "backend/server.js:35",
+        "path": "backend/server.js:1",
         "route": "/api/health",
         "originApp": "financial-services/revenue-recognition-engine"
       },
       {
-        "kind": "page",
+        "kind": "api",
         "sourceProject": "cash_flow",
-        "path": "server.ts:84",
+        "path": "dist-server/src/server/app.js:46",
+        "route": "/api/health",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "cash_flow",
+        "path": "src/server/app.ts:56",
         "route": "/api/health",
         "originApp": "financial-services/revenue-recognition-engine"
       },
       {
         "kind": "api",
         "sourceProject": "AIVCDealFlowCopilot",
-        "path": "backend/server.js:71",
+        "path": "backend/server.js:36",
         "route": "/api/health",
         "originApp": "financial-services/freqtrade-merged"
       },
       {
         "kind": "api",
         "sourceProject": "multiverseinvestment",
-        "path": "backend/server.js:46",
+        "path": "backend/server.js:25",
         "route": "/api/health",
         "originApp": "financial-services/freqtrade-merged"
       },
       {
         "kind": "api",
         "sourceProject": "AIFamilyOfficeManager",
-        "path": "backend/server.js:29",
+        "path": "backend/server.js:30",
         "route": "/api/health",
         "originApp": "financial-services/trading-merged"
       },
       {
         "kind": "api",
         "sourceProject": "AIWealthManagementRoboAdvisor",
-        "path": "server/index.js:48",
+        "path": "server/index.js:28",
         "route": "/api/health",
         "originApp": "financial-services/trading-merged"
       },
@@ -6346,7 +6536,7 @@
       {
         "kind": "api",
         "sourceProject": "trading",
-        "path": "backend/server.js:88",
+        "path": "backend/server.js:43",
         "route": "/health",
         "originApp": "financial-services/trading-merged"
       },
@@ -6367,35 +6557,35 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/server.js:38",
+        "path": "backend/server.js:35",
         "route": "/api/health",
         "originApp": "financial-services/grounded-claims"
       },
       {
         "kind": "api",
         "sourceProject": "AIInsuranceClaimsAdjuster",
-        "path": "backend/server.js:85",
+        "path": "backend/server.js:86",
         "route": "/api/health",
         "originApp": "financial-services/insurance-claims-adjuster"
       },
       {
         "kind": "api",
         "sourceProject": "AIInsuranceUnderwritingAgent",
-        "path": "backend/server.js:88",
+        "path": "backend/server.js:89",
         "route": "/api/health",
         "originApp": "financial-services/insurance-claims-adjuster"
       },
       {
         "kind": "api",
         "sourceProject": "AIAMLTransactionMonitoring",
-        "path": "backend/server.js:30",
+        "path": "backend/server.js:32",
         "route": "/api/health",
         "originApp": "financial-services/aml-transaction-monitoring"
       },
       {
         "kind": "api",
         "sourceProject": "AIAntiFraud",
-        "path": "server/index.js:88",
+        "path": "server/index.js:94",
         "route": "/api/health",
         "originApp": "financial-services/aml-transaction-monitoring"
       },
@@ -6493,28 +6683,28 @@
       {
         "kind": "api",
         "sourceProject": "AIPersonalFinanceMultiAgent",
-        "path": "backend/server.js:51",
+        "path": "backend/server.js:50",
         "route": "/api/health",
         "originApp": "financial-services/aml-transaction-monitoring"
       },
       {
         "kind": "api",
         "sourceProject": "AiFinancialReportGenerator",
-        "path": "backend/src/index.js:108",
+        "path": "backend/src/index.js:18",
         "route": "/api/health",
         "originApp": "financial-services/aml-transaction-monitoring"
       },
       {
         "kind": "api",
         "sourceProject": "aiFinancePlatform",
-        "path": "backend/src/index.js:133",
+        "path": "backend/src/index.js:164",
         "route": "/api/health",
         "originApp": "financial-services/aml-transaction-monitoring"
       },
       {
         "kind": "api",
         "sourceProject": "AICarbonCreditMarketplaceVerifier",
-        "path": "server/index.js:49",
+        "path": "server/index.js:52",
         "route": "/api/health",
         "originApp": "financial-services/carbon-credit-marketplace-verifier"
       },
@@ -6612,7 +6802,7 @@
       {
         "kind": "api",
         "sourceProject": "AICreditRiskAssessmentAgent",
-        "path": "backend/src/index.js:68",
+        "path": "backend/src/index.js:69",
         "route": "/api/health",
         "originApp": "financial-services/carbon-credit-marketplace-verifier"
       },
@@ -6703,14 +6893,14 @@
       {
         "kind": "api",
         "sourceProject": "AICreditRiskAssessmentAgent",
-        "path": "backend/src/routes/scenarioModeling.js:83",
+        "path": "backend/src/routes/scenarioModeling.js:84",
         "route": "/scenario-modeling/health",
         "originApp": "financial-services/carbon-credit-marketplace-verifier"
       },
       {
         "kind": "api",
         "sourceProject": "AIDebtCollectionOptimizer",
-        "path": "server/index.js:100",
+        "path": "server/index.js:108",
         "route": "/api/health",
         "originApp": "financial-services/carbon-credit-marketplace-verifier"
       },
@@ -6724,7 +6914,7 @@
       {
         "kind": "api",
         "sourceProject": "AIDebtCollectionOptimizer",
-        "path": "server/routes/contactStrategy.js:94",
+        "path": "server/routes/contactStrategy.js:95",
         "route": "/contact-strategy/health",
         "originApp": "financial-services/carbon-credit-marketplace-verifier"
       },
@@ -6794,7 +6984,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMortgageUnderwritingAssistant",
-        "path": "server/index.js:91",
+        "path": "server/index.js:97",
         "route": "/api/health",
         "originApp": "financial-services/carbon-credit-marketplace-verifier"
       }
@@ -6846,32 +7036,6 @@
         "sourceProject": "AISOXAuditAutomation",
         "path": "client/src/components/Layout.jsx:39",
         "route": "/incidents",
-        "originApp": "financial-services/audit-workpaper-automation"
-      }
-    ]
-  },
-  {
-    "name": "Ingest",
-    "canonicalKey": "ingest",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/gl/ingest"
-    ],
-    "sourceProjects": [
-      "AIAuditWorkpaperAutomation"
-    ],
-    "consolidatedFromApps": [
-      "financial-services/audit-workpaper-automation"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "server/routes/extensions.js:127",
-        "route": "/gl/ingest",
         "originApp": "financial-services/audit-workpaper-automation"
       }
     ]
@@ -7105,6 +7269,32 @@
     ]
   },
   {
+    "name": "Invoice Readiness",
+    "canonicalKey": "invoice readiness",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/invoice-readiness"
+    ],
+    "sourceProjects": [
+      "AIAPARAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAPARAutomation",
+        "path": "backend/routes/runtimeAi.js:9",
+        "route": "/invoice-readiness",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
     "name": "Issues",
     "canonicalKey": "issue",
     "aliases": [],
@@ -7147,7 +7337,7 @@
   },
   {
     "name": "Issues Tracker",
-    "canonicalKey": "issues tracker",
+    "canonicalKey": "issue tracker",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -7329,15 +7519,23 @@
     ],
     "routes": [
       "/:id/review",
+      "/api/v1/controls/kill-switch/release-requests/:id/review",
+      "/api/v1/paper/orders/:id/review",
+      "/claims/:id/review",
       "/management-reviews"
     ],
     "sourceProjects": [
       "AIAMLTransactionMonitoring",
-      "AISOXAuditAutomation"
+      "AIAccessibilityAuditAgent",
+      "AIGroundedClaims",
+      "AISOXAuditAutomation",
+      "cash_flow"
     ],
     "consolidatedFromApps": [
       "financial-services/aml-transaction-monitoring",
-      "financial-services/audit-workpaper-automation"
+      "financial-services/audit-workpaper-automation",
+      "financial-services/grounded-claims",
+      "financial-services/revenue-recognition-engine"
     ],
     "evidence": [
       {
@@ -7346,6 +7544,48 @@
         "path": "client/src/components/Layout.jsx:28",
         "route": "/management-reviews",
         "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAccessibilityAuditAgent",
+        "path": "backend/routes/governedAudits.js:7",
+        "route": "/:id/review",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "cash_flow",
+        "path": "dist-server/src/server/app.js:133",
+        "route": "/api/v1/paper/orders/:id/review",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "cash_flow",
+        "path": "dist-server/src/server/app.js:150",
+        "route": "/api/v1/controls/kill-switch/release-requests/:id/review",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "cash_flow",
+        "path": "src/server/app.ts:139",
+        "route": "/api/v1/paper/orders/:id/review",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "cash_flow",
+        "path": "src/server/app.ts:156",
+        "route": "/api/v1/controls/kill-switch/release-requests/:id/review",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIGroundedClaims",
+        "path": "backend/routes/claimVerificationWorkflow.js:74",
+        "route": "/claims/:id/review",
+        "originApp": "financial-services/grounded-claims"
       },
       {
         "kind": "api",
@@ -7403,14 +7643,14 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:80",
+        "path": "client/src/App.jsx:80",
         "route": "/materiality",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:16",
+        "path": "client/src/components/Sidebar.jsx:16",
         "route": "/materiality",
         "originApp": "financial-services/audit-workpaper-automation"
       },
@@ -7465,7 +7705,7 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:16",
+        "path": "client/src/components/Sidebar.jsx:16",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -7502,35 +7742,324 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/MaterialityCalculatorPage.js",
+        "path": "client/src/pages/MaterialityCalculatorPage.jsx",
         "route": "/MaterialityCalculatorPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
     ]
   },
   {
-    "name": "Members",
-    "canonicalKey": "member",
+    "name": "Me",
+    "canonicalKey": "me",
     "aliases": [],
     "kinds": [
       "api"
     ],
     "routes": [
-      "/collab/members"
+      "/api/auth/me",
+      "/auth/me",
+      "/me"
     ],
     "sourceProjects": [
-      "AIAuditWorkpaperAutomation"
+      "AIAMLTransactionMonitoring",
+      "AIAPARAutomation",
+      "AIAccessibilityAuditAgent",
+      "AIAntiFraud",
+      "AIAuditWorkpaperAutomation",
+      "AICarbonCreditMarketplaceVerifier",
+      "AIClimateFinanceCarbonRegistry",
+      "AICreditRiskAssessmentAgent",
+      "AICryptocurrencyTaxCalculator",
+      "AIDAOGovernanceAssistant",
+      "AIDebtCollectionOptimizer",
+      "AIExpenseReportAuditor",
+      "AIFamilyOfficeManager",
+      "AIForensicAccountingInvestigator",
+      "AIGroundedClaims",
+      "AIInsuranceClaimsAdjuster",
+      "AIInsuranceUnderwritingAgent",
+      "AIInvoiceProcessing",
+      "AIMortgageUnderwritingAssistant",
+      "AIPersonalFinanceMultiAgent",
+      "AISOXAuditAutomation",
+      "AISmallClaimsCourtGuide",
+      "AISmartContractAuditor",
+      "AIVCDealFlowCopilot",
+      "AIWealthManagementRoboAdvisor",
+      "AiFinancialReportGenerator",
+      "AiTaxPrep",
+      "aiFinancePlatform",
+      "bitcoin",
+      "cash_flow",
+      "claudeTrading",
+      "investment",
+      "trading"
     ],
     "consolidatedFromApps": [
-      "financial-services/audit-workpaper-automation"
+      "financial-services/aave-protocol-v2-merged",
+      "financial-services/aml-transaction-monitoring",
+      "financial-services/audit-workpaper-automation",
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/freqtrade-merged",
+      "financial-services/grounded-claims",
+      "financial-services/insurance-claims-adjuster",
+      "financial-services/invoice-processing",
+      "financial-services/revenue-recognition-engine",
+      "financial-services/smart-contract-auditor",
+      "financial-services/trading-merged"
     ],
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "server/routes/extensions.js:375",
-        "route": "/collab/members",
+        "sourceProject": "AIDAOGovernanceAssistant",
+        "path": "backend/routes/auth.js:29",
+        "route": "/me",
+        "originApp": "financial-services/aave-protocol-v2-merged"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIClimateFinanceCarbonRegistry",
+        "path": "backend/routes/auth.js:46",
+        "route": "/me",
+        "originApp": "financial-services/smart-contract-auditor"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICryptocurrencyTaxCalculator",
+        "path": "backend/src/routes/auth.js:35",
+        "route": "/me",
+        "originApp": "financial-services/smart-contract-auditor"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartContractAuditor",
+        "path": "backend/src/routes/auth.ts:66",
+        "route": "/me",
+        "originApp": "financial-services/smart-contract-auditor"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "bitcoin",
+        "path": "trading-platform/backend/src/routes/auth.js:11",
+        "route": "/me",
+        "originApp": "financial-services/smart-contract-auditor"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAPARAutomation",
+        "path": "backend/routes/auth.js:31",
+        "route": "/me",
         "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAccessibilityAuditAgent",
+        "path": "backend/routes/auth.js:111",
+        "route": "/me",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAccessibilityAuditAgent",
+        "path": "backend/runtimeAcceptance.js:95",
+        "route": "/auth/me",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "server/routes/auth.js:41",
+        "route": "/me",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "server/runtimeAcceptance.js:102",
+        "route": "/auth/me",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISOXAuditAutomation",
+        "path": "server/routes/auth.js:24",
+        "route": "/me",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "server/routes/auth.js:32",
+        "route": "/me",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIForensicAccountingInvestigator",
+        "path": "backend/src/routes/auth.js:68",
+        "route": "/me",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInvoiceProcessing",
+        "path": "server/index.js:135",
+        "route": "/api/auth/me",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiTaxPrep",
+        "path": "server/routes/auth.js:198",
+        "route": "/me",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "cash_flow",
+        "path": "dist-server/src/server/app.js:53",
+        "route": "/api/auth/me",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "cash_flow",
+        "path": "src/server/app.ts:63",
+        "route": "/api/auth/me",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVCDealFlowCopilot",
+        "path": "backend/routes/auth.js:42",
+        "route": "/me",
+        "originApp": "financial-services/freqtrade-merged"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "investment",
+        "path": "backend/auth.py:242",
+        "route": "/me",
+        "originApp": "financial-services/freqtrade-merged"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIFamilyOfficeManager",
+        "path": "backend/routes/auth.js:36",
+        "route": "/me",
+        "originApp": "financial-services/trading-merged"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWealthManagementRoboAdvisor",
+        "path": "server/routes/auth.js:57",
+        "route": "/me",
+        "originApp": "financial-services/trading-merged"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "claudeTrading",
+        "path": "server/routes/auth.js:504",
+        "route": "/me",
+        "originApp": "financial-services/trading-merged"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "trading",
+        "path": "backend/src/routes/authRoutes.js:7",
+        "route": "/me",
+        "originApp": "financial-services/trading-merged"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIGroundedClaims",
+        "path": "backend/routes/auth.js:27",
+        "route": "/me",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmallClaimsCourtGuide",
+        "path": "backend/routes/auth.js:62",
+        "route": "/me",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/auth.js:73",
+        "route": "/me",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/auth.js:30",
+        "route": "/me",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAMLTransactionMonitoring",
+        "path": "backend/routes/auth.js:3",
+        "route": "/me",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAntiFraud",
+        "path": "server/routes/auth.js:176",
+        "route": "/me",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPersonalFinanceMultiAgent",
+        "path": "backend/routes/auth.js:19",
+        "route": "/me",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiFinancialReportGenerator",
+        "path": "backend/governance/identityRouter.js:52",
+        "route": "/me",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "aiFinancePlatform",
+        "path": "backend/src/routes/auth.js:334",
+        "route": "/me",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICarbonCreditMarketplaceVerifier",
+        "path": "server/routes/auth.js:42",
+        "route": "/me",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICreditRiskAssessmentAgent",
+        "path": "backend/src/routes/auth.js:34",
+        "route": "/me",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIDebtCollectionOptimizer",
+        "path": "server/routes/auth.js:35",
+        "route": "/me",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMortgageUnderwritingAssistant",
+        "path": "server/routes/auth.js:27",
+        "route": "/me",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
       }
     ]
   },
@@ -7562,7 +8091,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:86",
+        "path": "client/src/App.jsx:86",
         "route": "/missing-features",
         "originApp": "financial-services/audit-workpaper-automation"
       },
@@ -7903,28 +8432,28 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:21",
+        "path": "client/src/components/Sidebar.jsx:21",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:85",
+        "path": "client/src/App.jsx:85",
         "route": "/pbc-aging-risk",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:21",
+        "path": "client/src/components/Sidebar.jsx:21",
         "route": "/pbc-aging-risk",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/PbcAgingRiskPage.js",
+        "path": "client/src/pages/PbcAgingRiskPage.jsx",
         "route": "/PbcAgingRiskPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -8037,7 +8566,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:87",
+        "path": "client/src/App.jsx:87",
         "route": "/production-readiness",
         "originApp": "financial-services/audit-workpaper-automation"
       },
@@ -8400,7 +8929,8 @@
     "canonicalKey": "report",
     "aliases": [
       "Report",
-      "Report Detail"
+      "Report Detail",
+      "Reports Page"
     ],
     "kinds": [
       "api",
@@ -8410,6 +8940,8 @@
     "routes": [
       "/ReportDetail",
       "/Reports",
+      "/Reports/ReportsPage",
+      "/ReportsPage",
       "/dashboard/reports",
       "/regulatory/report",
       "/regulatory/reports",
@@ -8464,15 +8996,22 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:76",
+        "path": "client/src/App.jsx:76",
         "route": "/reports",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:24",
+        "path": "client/src/components/Sidebar.jsx:24",
         "route": "/reports",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/pages/ReportsPage.jsx",
+        "route": "/ReportsPage",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
@@ -8527,8 +9066,15 @@
       {
         "kind": "page",
         "sourceProject": "cash_flow",
-        "path": "src/router/AppRouter.tsx:108",
+        "path": "src/router/AppRouter.tsx:74",
         "route": "/reports",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "cash_flow",
+        "path": "src/pages/Reports/ReportsPage.tsx",
+        "route": "/Reports/ReportsPage",
         "originApp": "financial-services/revenue-recognition-engine"
       },
       {
@@ -8692,28 +9238,28 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:17",
+        "path": "client/src/components/Sidebar.jsx:17",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:81",
+        "path": "client/src/App.jsx:81",
         "route": "/risk-heat-map",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:17",
+        "path": "client/src/components/Sidebar.jsx:17",
         "route": "/risk-heat-map",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/RiskHeatMapPage.js",
+        "path": "client/src/pages/RiskHeatMapPage.jsx",
         "route": "/RiskHeatMapPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -9767,28 +10313,28 @@
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:71",
+        "path": "client/src/App.jsx:71",
         "route": "/sampling",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:11",
+        "path": "client/src/components/Sidebar.jsx:11",
         "route": "/sampling",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/Dashboard.js:64",
+        "path": "client/src/pages/Dashboard.jsx:64",
         "route": "/sampling",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/SamplingPage.js",
+        "path": "client/src/pages/SamplingPage.jsx",
         "route": "/SamplingPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -9904,6 +10450,7 @@
       "page"
     ],
     "routes": [
+      "/:id/score",
       "/ml-fraud-detector/score",
       "/score",
       "scores"
@@ -10006,6 +10553,13 @@
         "sourceProject": "AIAMLTransactionMonitoring",
         "path": "backend/routes/structuringRisk.js:3",
         "route": "/score",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAntiFraud",
+        "path": "server/routes/governedInvestigations.js:37",
+        "route": "/:id/score",
         "originApp": "financial-services/aml-transaction-monitoring"
       },
       {
@@ -10343,7 +10897,7 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:11",
+        "path": "client/src/components/Sidebar.jsx:11",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -10661,7 +11215,7 @@
   },
   {
     "name": "Trends Retests",
-    "canonicalKey": "retest trends",
+    "canonicalKey": "retest trend",
     "aliases": [],
     "kinds": [
       "page"
@@ -11043,28 +11597,28 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:18",
+        "path": "client/src/components/Sidebar.jsx:18",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:82",
+        "path": "client/src/App.jsx:82",
         "route": "/workpaper-templates",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:18",
+        "path": "client/src/components/Sidebar.jsx:18",
         "route": "/workpaper-templates",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/WorkpaperTemplatesPage.js",
+        "path": "client/src/pages/WorkpaperTemplatesPage.jsx",
         "route": "/WorkpaperTemplatesPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
@@ -11094,35 +11648,35 @@
       {
         "kind": "navigation",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:12",
+        "path": "client/src/components/Sidebar.jsx:12",
         "route": "",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/App.js:72",
+        "path": "client/src/App.jsx:72",
         "route": "/workpapers",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/components/Sidebar.js:12",
+        "path": "client/src/components/Sidebar.jsx:12",
         "route": "/workpapers",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/Dashboard.js:65",
+        "path": "client/src/pages/Dashboard.jsx:65",
         "route": "/workpapers",
         "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "page",
         "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "client/src/pages/WorkpapersPage.js",
+        "path": "client/src/pages/WorkpapersPage.jsx",
         "route": "/WorkpapersPage",
         "originApp": "financial-services/audit-workpaper-automation"
       }
