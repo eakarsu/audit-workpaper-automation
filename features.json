@@ -308,6 +308,7 @@
     "canonicalKey": "aging analysis",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -322,6 +323,13 @@
       "financial-services/audit-workpaper-automation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/AgingAnalysis.jsx:1",
+        "route": "/aging-analysis",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAPARAutomation",
@@ -400,6 +408,58 @@
         "sourceProject": "AIAPARAutomation",
         "path": "backend/routes/customViews.js:86",
         "route": "/aging-report",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "AI 3 Way Matching",
+    "canonicalKey": "3 ai matching way",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/three-way-matching"
+    ],
+    "sourceProjects": [
+      "AIAPARAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/ThreeWayMatching.jsx:1",
+        "route": "/three-way-matching",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "AI ERP Mapping Suggestions",
+    "canonicalKey": "ai erp mapping suggestion",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/erp-mapping-suggest"
+    ],
+    "sourceProjects": [
+      "AIAPARAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/ErpMappingSuggest.jsx:1",
+        "route": "/erp-mapping-suggest",
         "originApp": "financial-services/audit-workpaper-automation"
       }
     ]
@@ -503,6 +563,84 @@
     ]
   },
   {
+    "name": "AI Multi Currency Fx Exposure",
+    "canonicalKey": "ai currency exposure fx multi",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/multi-currency-fx"
+    ],
+    "sourceProjects": [
+      "AIAPARAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/MultiCurrencyFx.jsx:1",
+        "route": "/multi-currency-fx",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "AI Remediation Assistant",
+    "canonicalKey": "ai assistant remediation",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai-remediation-chat"
+    ],
+    "sourceProjects": [
+      "AIAccessibilityAuditAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAccessibilityAuditAgent",
+        "path": "frontend/src/App.js:118",
+        "route": "/ai/ai-remediation-chat",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "AI Vendor Fraud Detection",
+    "canonicalKey": "ai detection fraud vendor",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/vendor-fraud-detection"
+    ],
+    "sourceProjects": [
+      "AIAPARAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/VendorFraudDetection.jsx:1",
+        "route": "/vendor-fraud-detection",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
     "name": "Alt Text",
     "canonicalKey": "alt text",
     "aliases": [],
@@ -555,6 +693,32 @@
         "sourceProject": "AIAccessibilityAuditAgent",
         "path": "frontend/src/components/Sidebar.js:55",
         "route": "",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "Analysis Selected Id",
+    "canonicalKey": "analysis id selected",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-history"
+    ],
+    "sourceProjects": [
+      "AIAuditWorkpaperAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/pages/AIHistoryPage.jsx:1",
+        "route": "/ai-history",
         "originApp": "financial-services/audit-workpaper-automation"
       }
     ]
@@ -1455,6 +1619,7 @@
     "canonicalKey": "cash",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -1469,6 +1634,13 @@
       "financial-services/audit-workpaper-automation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/CashApplication.jsx:1",
+        "route": "/cash-application",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAPARAutomation",
@@ -2873,6 +3045,7 @@
     "canonicalKey": "capture discount",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -2887,6 +3060,13 @@
       "financial-services/audit-workpaper-automation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/DiscountCapture.jsx:1",
+        "route": "/discount-capture",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAPARAutomation",
@@ -3030,6 +3210,7 @@
     "canonicalKey": "dunning optimization",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -3044,6 +3225,13 @@
       "financial-services/audit-workpaper-automation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/DunningOptimization.jsx:1",
+        "route": "/dunning-optimization",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAPARAutomation",
@@ -3573,9 +3761,11 @@
     "canonicalKey": "evidence score",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/evidence-adequacy?tool=evidence-scores",
       "/evidence-scores"
     ],
     "sourceProjects": [
@@ -3585,6 +3775,13 @@
       "financial-services/audit-workpaper-automation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/pages/EvidenceAdequacyPage.jsx:1",
+        "route": "/evidence-adequacy?tool=evidence-scores",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAuditWorkpaperAutomation",
@@ -5615,10 +5812,12 @@
     "canonicalKey": "from generate template",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/generate-from-template"
+      "/generate-from-template",
+      "/workpaper-templates?tool=generate-from-template"
     ],
     "sourceProjects": [
       "AIAuditWorkpaperAutomation"
@@ -5627,6 +5826,13 @@
       "financial-services/audit-workpaper-automation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/pages/WorkpaperTemplatesPage.jsx:1",
+        "route": "/workpaper-templates?tool=generate-from-template",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAuditWorkpaperAutomation",
@@ -7198,6 +7404,7 @@
     "canonicalKey": "invoice matching",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -7212,6 +7419,13 @@
       "financial-services/audit-workpaper-automation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/InvoiceMatching.jsx:1",
+        "route": "/invoice-matching",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAPARAutomation",
@@ -8330,6 +8544,7 @@
     "canonicalKey": "payment reconciliation",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -8344,6 +8559,13 @@
       "financial-services/audit-workpaper-automation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAPARAutomation",
+        "path": "frontend/src/pages/PaymentReconciliation.jsx:1",
+        "route": "/payment-reconciliation",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAPARAutomation",
@@ -10604,9 +10826,11 @@
     "canonicalKey": "adequacy evidence score",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/evidence-adequacy?tool=score-evidence-adequacy",
       "/score-evidence-adequacy"
     ],
     "sourceProjects": [
@@ -10616,6 +10840,13 @@
       "financial-services/audit-workpaper-automation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/pages/EvidenceAdequacyPage.jsx:1",
+        "route": "/evidence-adequacy?tool=score-evidence-adequacy",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAuditWorkpaperAutomation",
@@ -11008,6 +11239,41 @@
         "sourceProject": "AIAPARAutomation",
         "path": "frontend/src/pages/TaxCompliance.jsx",
         "route": "/TaxCompliance",
+        "originApp": "financial-services/audit-workpaper-automation"
+      }
+    ]
+  },
+  {
+    "name": "Templates",
+    "canonicalKey": "template",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/templates",
+      "/workpaper-templates?tool=templates"
+    ],
+    "sourceProjects": [
+      "AIAuditWorkpaperAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/pages/WorkpaperTemplatesPage.jsx:1",
+        "route": "/workpaper-templates?tool=templates",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "server/routes/ai.js:599",
+        "route": "/templates",
         "originApp": "financial-services/audit-workpaper-automation"
       }
     ]

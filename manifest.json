@@ -11,12 +11,12 @@
     "AIAuditWorkpaperAutomation",
     "AISOXAuditAutomation"
   ],
-  "featureCount": 272,
-  "candidateFeatureCount": 364,
-  "eliminatedSimilarFeatures": 92,
-  "evidenceCount": 872,
-  "aiPageCount": 0,
-  "sourceAIPageCount": 0,
+  "featureCount": 279,
+  "candidateFeatureCount": 370,
+  "eliminatedSimilarFeatures": 91,
+  "evidenceCount": 889,
+  "aiPageCount": 16,
+  "sourceAIPageCount": 16,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
@@ -25,6 +25,6 @@
     "seededTables": 0,
     "seededRows": 0
   },
-  "visibleFeatureCount": 192,
-  "featureVisibilityMode": "source-backed-fallback"
+  "visibleFeatureCount": 16,
+  "featureVisibilityMode": "seeded-or-ai"
 }

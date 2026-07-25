@@ -3,7 +3,7 @@
 Industry: **Financial Services**  
 Specialization: **Audit Workpaper Automation**
 
-This standalone application consolidates source-backed capabilities into 272 optimized features, including 192 visible data-backed or AI-enabled views. Its public demo SQLite database contains 0 sanitized source rows across 0 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 279 optimized features, including 16 visible data-backed or AI-enabled views. Its public demo SQLite database contains 0 sanitized source rows across 0 imported tables and 120 operational workflow records.
 
 ## Run locally
 
