@@ -21,10 +21,10 @@
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
   "databaseSeed": {
-    "seededProjects": 0,
-    "seededTables": 0,
-    "seededRows": 0
+    "seededProjects": 1,
+    "seededTables": 6,
+    "seededRows": 93
   },
-  "visibleFeatureCount": 16,
-  "featureVisibilityMode": "seeded-or-ai"
+  "visibleFeatureCount": 279,
+  "featureVisibilityMode": "all-source-backed"
 }
